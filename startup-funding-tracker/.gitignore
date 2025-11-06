@@ -1,0 +1,123 @@
+# ==============================
+# 🧠 PYTHON & DATA ANALYTICS PROJECT GITIGNORE
+# ==============================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+MANIFEST
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+
+# --- Jupyter / Logs / Temp Files ---
+*.ipynb_checkpoints
+*.log
+*.tmp
+*.bak
+*.swp
+*.out
+*.pid
+*.gz
+
+# --- Compiled / Cache / Bytecode ---
+*.cache
+*.pkl
+*.pickle
+*.joblib
+__pycache__/
+.pytest_cache/
+.cache/
+.coverage
+htmlcov/
+
+# --- Local Configs ---
+.env
+.env.*
+*.ini
+config.yaml
+secrets.yaml
+
+# --- Data Files (keep only raw example CSVs) ---
+data/raw/*.zip
+data/raw/*.xlsx
+data/raw/*.json
+data/raw/*.parquet
+data/raw/*.sql
+data/interim/*
+data/processed/*
+!data/raw/global_startup_success_dataset.csv
+
+# --- Database Files ---
+db/*.db
+db/*.sqlite3
+db/*.sqlite
+!db/db_schema.sql
+
+# --- ETL Output & Temporary Artifacts ---
+etl/__pycache__/
+etl/tmp/
+etl/output/
+etl/logs/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+.streamlit/config.toml
+.streamlit/credentials.toml
+
+# --- OS / System ---
+Thumbs.db
+Desktop.ini
+*.lnk
+*.tmp
+*.bak
+*.swp
+
+# --- Reports / Notebooks ---
+*.html
+*.pdf
+*.docx
+*.pptx
+notebooks/.ipynb_checkpoints/
+notebooks/temp/
+
+# --- GitHub Actions / CI Cache ---
+.github/workflows/__pycache__/
+.github/workflows/logs/
+.github/actions_cache/
+logs/
+artifacts/
+
+# --- Docker ---
+Dockerfile~
+*.tar
+*.img
+*.bak
+*.pid
+
+# --- Node / Frontend (if you later add JS extensions) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Misc ---
+*.old
+*.orig
+*.rej
